@@ -1,0 +1,50 @@
+//.wi-cloud:before {content: $cloud;}
+//.wi-cloudy:before {content: $cloudy;}
+//.wi-cloudy-gusts:before {content: $cloudy-gusts;}
+//.wi-cloudy-windy:before {content: $cloudy-windy;}
+//.wi-fog:before {content: $fog;}
+//.wi-hail:before {content: $hail;}
+//.wi-rain:before {content: $rain;}
+//.wi-rain-mix:before {content: $rain-mix;}
+//.wi-rain-wind:before {content: $rain-wind;}
+//.wi-showers:before {content: $showers;}
+//.wi-sleet:before {content: $sleet;}
+//.wi-snow:before {content: $snow;}
+//.wi-sprinkle:before {content: $sprinkle;}
+//.wi-storm-showers:before {content: $storm-showers;}
+//.wi-thunderstorm:before {content: $thunderstorm;}
+//.wi-snow-wind:before {content: $snow-wind;}
+//.wi-snow:before {content: $snow;}
+//.wi-smog:before {content: $smog;}
+//.wi-smoke:before {content: $smoke;}
+//.wi-lightning:before {content: $lightning;}
+//.wi-raindrops:before {content: $raindrops;}
+//.wi-raindrop:before {content: $raindrop;}
+//.wi-dust:before {content: $dust;}
+//.wi-snowflake-cold:before {content: $snowflake-cold;}
+//.wi-windy:before {content: $windy;}
+//.wi-strong-wind:before {content: $strong-wind;}
+//.wi-sandstorm:before {content: $sandstorm;}
+//.wi-earthquake:before {content: $earthquake;}
+//.wi-fire:before {content: $fire;}
+//.wi-flood:before {content: $flood;}
+//.wi-meteor:before {content: $meteor;}
+//.wi-tsunami:before {content: $tsunami;}
+//.wi-volcano:before {content: $volcano;}
+//.wi-hurricane:before {content: $hurricane;}
+//.wi-tornado:before {content: $tornado;}
+//.wi-small-craft-advisory:before {content: $small-craft-advisory;}
+//.wi-gale-warning:before {content: $gale-warning;}
+//.wi-storm-warning:before {content: $storm-warning;}
+//.wi-hurricane-warning:before {content: $hurricane-warning;}
+//.wi-wind-direction:before {content: $wind-direction;}
+
+.wi-01d:before {content: $day-sunny;}	.wi-01n:before {content: $night-clear;}	//clear sky
+.wi-02d:before ,	.wi-02n:before {content: $cloudy;}	//few clouds
+.wi-03d:before ,	.wi-03n:before {content: $cloud;}	//scattered clouds
+.wi-04d:before, 	.wi-04n:before{content: $cloudy;} 	//broken clouds
+.wi-09d:before ,	.wi-09n:before {content: $showers;}//	shower rain
+.wi-10d:before ,	.wi-10n:before {content: $rain;}	//rain
+.wi-11d:before ,	.wi-11n:before {content: $thunderstorm;}	//thunderstorm
+.wi-13d:before ,	.wi-13n:before {content: $snow;}	//snow
+.wi-50d:before ,	.wi-50n:before {content: $dust;}	//mist

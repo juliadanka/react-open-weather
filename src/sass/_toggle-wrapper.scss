@@ -1,0 +1,41 @@
+.toggle-wrapper {
+  order: 1;
+  margin: 0 0 calculateRem(3px) auto ;
+
+  @media(max-width: $screen-xs-max) {
+    width: 100%;
+    order: -1;
+    margin-bottom: calculateRem(30px);
+    text-align: right;
+  }
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 91px;
+  height: 32px;
+  background: transparent;
+  border: 1px solid;
+  border-radius: 16px;
+  padding: 1px;
+  font-size: calculateRem(14px);
+  line-height: 31px;
+  font-weight: 700;
+  color: inherit;
+  cursor:pointer;
+}
+
+.slider {
+  display: block;
+  float: right;
+  height: 28px;
+  width: 34px;
+  border: 1px solid;
+  border-radius: 16px;
+  transition: all .4s ease-in-out;
+  .switch-imperial & {
+    float: left;
+  }
+}
+

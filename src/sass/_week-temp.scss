@@ -1,0 +1,25 @@
+.week-temp {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: 1rem;
+  justify-content: space-around;
+
+  .temp-wrapper {
+    width: 14.28%;
+    padding:  calculateRem(58px) 0 0;
+    min-width: 70px;
+    @media(max-width: $screen-sm-max) {
+      padding:  calculateRem(40px) 0 0;
+    }
+  }
+  .date{
+    margin-bottom: 1rem;
+  }
+  .wi{
+    font-size: 3.2rem;
+  }
+  .temp{
+    margin-top: calculateRem(20px);
+  }
+}

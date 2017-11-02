@@ -1,0 +1,26 @@
+.main-wrapper {
+  background: $main-wrapper-bg;
+  padding: $main-wrapper-padding;
+  display: flex;
+  align-items: center;
+  min-height: 685px;
+  margin: 0  auto;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+  width:930px;
+  position: relative;
+
+  & > div {
+    width: 100%;
+  }
+  @media(max-width:$screen-md-max)
+  {  width: 600px;
+    min-height: 470px;
+  }
+  @media(max-width: $screen-sm-max) {
+    width: 460px;
+    max-width: 90%;
+  }
+  @media(max-width: $screen-xs-max) {
+    padding: calculateRem(30px);
+  }
+}

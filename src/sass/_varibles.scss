@@ -1,0 +1,23 @@
+$font-family-base: 'Roboto', sans-serif;
+$font-size-base: 1.5rem;
+$font-weight-base: 300;
+$line-height-base: 1.2;
+$body-color: #4a6775;
+$body-bg: linear-gradient(to bottom, #fc6858 0%, #ff8969 100%);
+$paragraph-margin-bottom: 0.7rem;
+$spacer: 1rem;
+$dt-font-weight: 700;
+$link-color: inherit;
+$brand-color: #e49682;
+$link-hover-color: $brand-color;
+$table-cell-padding: 0.5rem;
+
+$main-wrapper-bg: #fff;
+$main-wrapper-padding: 2.5rem; //40
+$main-wrapper-margin: 6.7% 0;
+$screen-lg-min:1024px;
+$screen-md-max:1023px;
+$screen-md-min:768px;
+$screen-sm-min:410px;
+$screen-sm-max:767px;
+$screen-xs-max:409px;
