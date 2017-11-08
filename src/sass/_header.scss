@@ -10,6 +10,7 @@ $model: 'header';
   &__title {
     font-size: 3rem;
     font-weight: 500;
+    margin: 0;
     @media(max-width: $screen-sm-max) {
       font-size: 2rem;
     }

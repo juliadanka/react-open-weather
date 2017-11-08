@@ -25,10 +25,10 @@ export class Info extends React.Component {
                 <div>
                     <div className="header">
                         <Toggle units={this.props.units} onToogle={this.onToogle}/>
-                        <div className="header__title"><a href="#" className="header__button--back"
+                        <h1 className="header__title"><a href="#" className="header__button--back"
                                                           onClick={this.handelBackToForm}><i
                             className="material-icons">arrow_back</i></a>
-                            <span>{this.props.data.city.name}</span></div>
+                            <span>{this.props.data.city.name}</span></h1>
                     </div>
                     <CurrentDayInfo data={this.props.data} units={this.props.units}/>
                 </div>
@@ -36,10 +36,10 @@ export class Info extends React.Component {
 
         }
         return (
-            <div className={classEl}>
+            <section className={classEl}>
                 {header}
                 <WeekInfo data={this.props.data} units={this.props.units}/>
-            </div>
+            </section>
         )
     }
 
