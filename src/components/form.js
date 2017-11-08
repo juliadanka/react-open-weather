@@ -7,15 +7,12 @@ export class Form extends React.Component {
         this.state = {
             location: ''
         };
-        this.changeLocation = this.changeLocation.bind(this);
-        this.fetchDataByCoordinates = this.fetchDataByCoordinates.bind(this);
-        this.fetchDataByName = this.fetchDataByName.bind(this);
 
     }
 
     fetchDataByName(evt) {
         evt.preventDefault();
-        var location = encodeURIComponent(this.state.location);
+        const location = encodeURIComponent(this.state.location);
         if (location === '') {
             return;
         }
@@ -42,20 +39,20 @@ export class Form extends React.Component {
         const classEl = 'form ' + (isLoading ? ' form--loading' : '' ) + ( isHide ? ' form--hide' : '');
         return (
             <section>
-                <form onSubmit={this.fetchDataByName} className={classEl}>
+                <form onSubmit={(evt) => this.fetchDataByName(evt)} className={classEl}>
                     <div className="form__row">
                         <input className="form__input"
                                placeholder={"City"}
                                type="text"
                                value={this.state.location}
-                               onChange={this.changeLocation}
+                               onChange={(evt) => this.changeLocation(evt)}
                         />
                         <button className="form__submit" type="submit"><i className="material-icons">search</i></button>
                     </div>
                     <div className="form__row">
                         <small className="form__info">or</small>
                         use my <a href="#" className="current-position" itemID="current-position"
-                                  onClick={this.fetchDataByCoordinates}>current position</a>
+                                  onClick={(evt) => this.fetchDataByCoordinates(evt)}>current position</a>
                     </div>
                 </form>
             </section>

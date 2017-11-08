@@ -11,22 +11,20 @@ export class Info extends React.Component {
         this.state = {
             data: {}
         };
-        this.onToogle = this.onToogle.bind(this);
-        this.handelBackToForm = this.handelBackToForm.bind(this);
     }
 
 
     render() {
-        var header = '';
+        let header = '';
         const isHide = !this.props.showdata;
         const classEl = 'info ' + ( isHide ? ' info--hide' : '');
         if (this.props.data.list) {
             header = (
                 <div>
                     <div className="header">
-                        <Toggle units={this.props.units} onToogle={this.onToogle}/>
+                        <Toggle units={this.props.units} onToggle={(units)=>this.onToggle(units)}/>
                         <h1 className="header__title"><a href="#" className="header__button--back"
-                                                          onClick={this.handelBackToForm}><i
+                                                          onClick={(evt)=>this.handelBackToForm(evt)}><i
                             className="material-icons">arrow_back</i></a>
                             <span>{this.props.data.city.name}</span></h1>
                     </div>
@@ -43,11 +41,11 @@ export class Info extends React.Component {
         )
     }
 
-    onToogle(units) {
+    onToggle(units) {
         this.setState({
             units: units
         });
-        this.props.onToogle(units);
+        this.props.onToggle(units);
     }
 
     handelBackToForm(evt) {
