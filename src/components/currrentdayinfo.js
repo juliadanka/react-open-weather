@@ -34,12 +34,12 @@ export class CurrentDayInfo extends React.Component {
       var date = dateFormat(d, "dddd, mmmm dS yyyy");
       header = (
         <div>
-          <div className="date">{date}</div>
-          <div className="deacription">{currentDayTemp[0].props.data.weather[0].description}</div>
-          <div className="temp-wrapper">
-            <div className="current-temp">{temp}<sup>o</sup>{tempindex} <i className={iconClass}></i>
+          <div className="today__date">{date}</div>
+          <div className="today__deacription">{currentDayTemp[0].props.data.weather[0].description}</div>
+          <div className="temp">
+            <div className="temp__info--lg">{temp}<sup>o</sup>{tempindex} <i className={iconClass}></i>
             </div>
-            <div className="day-temp">
+            <div className="temp__info--sm">
             {currentDayTemp}
             </div>
           </div>
@@ -47,7 +47,7 @@ export class CurrentDayInfo extends React.Component {
       );
     }
     return (
-      <div className="current-day">
+      <div className="today">
         {header}
       </div>
     )

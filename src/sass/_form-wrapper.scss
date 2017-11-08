@@ -1,35 +1,33 @@
-.form-wrapper {
+$model: 'form';
+.#{$model} {
   width: 592px;
   margin: 0 auto;
   max-width: 100%;
   position: relative;
+  transition: opacity 0.3s ease-in-out ;
   &,
-  input[type="text"] {
+  &__input {
     text-align: center;
   }
-  .form-row {
+  &__row {
     position: relative;
-    &+.form-row{
+    &+.#{$model}__row{
       margin-top: calculateRem(40px);
     }
   }
-  small{
+  &__info{
     display: block;
     margin: 0 0 calculateRem(20px);
   }
-  button[type="submit"] {
+  .#{$model}__submit{
     position: absolute;
     right: 0;
     top: calculateRem(11px);
   }
-  form{
-    transition: opacity 0.3s ease-in-out ;
-  }
-  form.loading{
+  &--loading{
     opacity: 0;
-
   }
-  &.show{
+  &--hide{
     visibility: hidden;
     display: none;
   }

@@ -1,4 +1,5 @@
-.loader {
+$model: 'loader';
+.#{$model} {
   font-size: 2.5rem;
   opacity: 0;
   visibility: hidden;
@@ -7,11 +8,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
   transition: opacity 0.3s ease-in-out;
-  &.loading {
+  &--loading {
     opacity: 1;
     visibility: visible;
   }
-  .material-icons {
+  &__icon {
     animation: spin 1s linear infinite;
   }
 }

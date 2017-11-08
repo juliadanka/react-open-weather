@@ -34,7 +34,7 @@ export class WeekInfo extends React.Component {
 
     }
     return (
-      <div className="week-temp">
+      <div className="week">
         {currentTemp}
       </div>
     )

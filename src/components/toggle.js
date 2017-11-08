@@ -15,11 +15,11 @@ class Toggle extends React.Component {
 
   render() {
 
-    var classname = 'switch switch-' + (this.props.units );
+    var classname = 'toggle__switch toggle__switch--' + (this.props.units );
     return (
-      <div className="toggle-wrapper">
+      <div className="toggle">
         <button onClick={this.handleClick} className={classname}>
-          <span className="slider "></span><sup>o</sup>{this.props.units==='metric' ? 'C' : 'F'}
+          <span className="toggle__slider"></span><sup>o</sup>{this.props.units==='metric' ? 'C' : 'F'}
         </button>
       </div>
     );

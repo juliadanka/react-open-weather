@@ -1,0 +1,7 @@
+$model: 'info';
+.#{$model} {
+  &--hide {
+    visibility: hidden;
+    display: none;
+  }
+}

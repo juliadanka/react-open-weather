@@ -6,7 +6,7 @@ class ErrorMsg extends React.Component {
   }
 
   render() {
-    var className=(this.props.msg==='')?'error-wrapper hide':'error-wrapper';
+    var className=(this.props.msg==='')?'error error--hide':'error';
     return (
       <div className={className}>{this.props.msg}</div>
     )

@@ -5,9 +5,10 @@ class Loader extends React.Component {
         super(props);
     }
     render() {
-        var className = "loader " + this.props.loading;
+        const isLoading = this.props.loading;
+        const classEl= 'loader '+(isLoading?' loader--loading':'' );
         return (
-            <div className={className}><i className="material-icons">cached</i></div>
+            <div className={classEl}><i className="loader__icon material-icons">cached</i></div>
         )
     }
 }

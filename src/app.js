@@ -24,8 +24,8 @@ class App extends React.Component {
       datanextdays: {},
       datacurrentday: {},
       units: 'metric',
-      showdata: '',
-      loading: '',
+      showdata: false,
+      loading: true,
       cnt: '40',
       errormsg: ''
     };
@@ -107,7 +107,7 @@ class App extends React.Component {
   onBackToForm() {
     this.setState({
       units: 'metric',
-      showdata: ' '
+      showdata: false
     });
   }
 
@@ -115,7 +115,7 @@ class App extends React.Component {
   setLoading() {
     var self = this;
     this.setState({
-      loading: 'loading'
+      loading: true
     });
   }
 
@@ -129,7 +129,7 @@ class App extends React.Component {
     var self = this;
     setTimeout(function () {
       self.setState({
-        loading: ''
+        loading: false
       });
     }, 200);
   }
@@ -138,7 +138,7 @@ class App extends React.Component {
   onFetchDataSuccess(data) {
     this.setState({
       data: data,
-      showdata: 'show'
+      showdata: true
     });
   }
 

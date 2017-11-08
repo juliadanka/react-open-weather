@@ -1,0 +1,38 @@
+$model: 'temp';
+.#{$model} {
+  color: $brand-color;
+  display: flex;
+  align-items: center;
+  @media(max-width: $screen-xs-max) {
+    display: block;
+  }
+  @media(max-width: $screen-sm-max) {
+    padding-top: calculateRem(20px);
+  }
+
+  &__info--lg {
+    font-size: 9rem;
+    font-weight: 500;
+    margin-right: 80px;
+    @media(max-width: $screen-md-max) {
+      font-size: 6rem;
+      margin-right: calculateRem(40px);
+    }
+    @media(max-width: $screen-sm-max) {
+
+      margin-right: calculateRem(20px);
+      font-size: 4rem;
+    }
+    @media(max-width: $screen-xs-max) {
+      margin: 0 0 calculateRem(20px);
+    }
+  }
+  &__info__title--sm {
+    min-width: 80px;
+    display: inline-block;
+    @media(min-width: $screen-lg-min) {
+      min-width: 138px;
+
+    }
+  }
+}

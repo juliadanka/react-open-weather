@@ -1,11 +1,12 @@
-.week-temp {
+$model: 'week';
+.#{$model} {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
   font-size: 1rem;
   justify-content: space-around;
 
-  .temp-wrapper {
+ &__el {
     width: 14.28%;
     padding:  calculateRem(58px) 0 0;
     min-width: 70px;
@@ -13,13 +14,14 @@
       padding:  calculateRem(40px) 0 0;
     }
   }
-  .date{
+  &__el__date{
     margin-bottom: 1rem;
   }
-  .wi{
+  &__el__icon{
     font-size: 3.2rem;
   }
-  .temp{
+  &__el__temp{
     margin-top: calculateRem(20px);
+    text-align: center;
   }
 }

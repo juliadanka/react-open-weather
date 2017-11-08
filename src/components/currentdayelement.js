@@ -13,19 +13,19 @@ class CurrentDayElement extends React.Component {
     var evening = '';
     var night = '';
     if (dt_txt.endsWith('9:00:00')) {
-      morning = (<p><span>Morning</span> {temp}<sup>o</sup>{tempindex}</p>);
+      morning = (<p><span className="temp__info__title--sm">Morning</span> {temp}<sup>o</sup>{tempindex}</p>);
     }
     if (dt_txt.endsWith('12:00:00')) {
-      day = (<p><span>Day</span> {temp}<sup>o</sup>{tempindex}</p>);
+      day = (<p><span className="temp__info__title--sm">Day</span> {temp}<sup>o</sup>{tempindex}</p>);
     }
     if (dt_txt.endsWith('18:00:00')) {
-      evening = (<p><span>Evening</span> {temp}<sup>o</sup>{tempindex}</p>);
+      evening = (<p><span className="temp__info__title--sm">Evening</span> {temp}<sup>o</sup>{tempindex}</p>);
     }
     if (dt_txt.endsWith('21:00:00')) {
-      night = (<p><span>Night</span> {temp}<sup>o</sup>{tempindex}</p>);
+      night = (<p><span className="temp__info__title--sm">Night</span> {temp}<sup>o</sup>{tempindex}</p>);
     }
     return (
-      <div className="current-day-info">
+      <div className="">
         {morning}{day}{evening}{night}
       </div>
     )

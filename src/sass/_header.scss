@@ -1,0 +1,29 @@
+$model: 'header';
+.#{$model} {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: calculateRem(59px);
+  @media(max-width: $screen-sm-max) {
+    margin-bottom: calculateRem(30px);
+  }
+  &__title {
+    font-size: 3rem;
+    font-weight: 500;
+    @media(max-width: $screen-sm-max) {
+      font-size: 2rem;
+    }
+  }
+  &__button--back {
+    font-size: 2.5rem;
+    margin: calculateRem(8px) calculateRem(19px) 0 0;
+    vertical-align: top;
+    border: 0 solid;
+    display: inline-block;
+
+    @media(max-width: $screen-sm-max) {
+      margin: calculateRem(6px) calculateRem(19px) 0 0;
+      font-size: 1.5rem;
+    }
+  }
+}
